@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LadyBug - Sign Up Successful</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h3 class="card-title mb-4">Sign Up Successful!</h3>
+    <p class="text-success">You have successfully signed up. Redirecting to login page...</p>
+</div>
+
+<!-- Redirect to login page after 3 seconds -->
+<script>
+    setTimeout(function() {
+        window.location.href = "/login";
+    }, 3000);  // 3000 milliseconds (3 seconds) delay
+</script>
+
+</body>
+</html>
